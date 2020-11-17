@@ -17,9 +17,9 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "bwm",
       "styles": [
-        "styles.css",
+        "styles.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [],
@@ -28,9 +28,9 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
-      "stylePreprocessorOption": {
+      "stylePreprocessorOptions": {
         "includePaths": [
-          "src/styles"
+          "./styles"
         ]
       }
     }
@@ -60,7 +60,10 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {},
+    "spec": {
+      "component": false
+    }
   }
 }
